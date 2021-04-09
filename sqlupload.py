@@ -5,13 +5,13 @@ import requests
 #Webaccess Headers
 headers = {
     'Content-Type' : 'application/json; charset=utf-8; LoginType=view;',
-    'Authorization' : 'Basic YWRtaW4'
+    'Authorization' : 'Basic YWRtaW4' #登入使用者名稱與密碼,需使用Basic 64 解碼轉換
 }
 
 #Webaccess登入
 
 url_Log="http://localhost/WaWebService/JSON/Login"
-r = requests.get(url_Log, auth=('admin',''))
+r = requests.get(url_Log, auth=('username','password'))
 #print(r.status_code)
 #print(r.text.encode('utf8'))
 
