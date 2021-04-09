@@ -303,10 +303,10 @@ print('生產批號:',mix_product_gettag)
 # Some other example server values are
 # server = 'localhost\sqlexpress' # for a named instance
 # server = 'myserver,port' # to specify an alternate port
-server = '192.168.1.96' 
-database = 'ZIMIEEP' 
-username = 'plc' 
-password = '@plc!2903.' 
+server = 'server IP/address' 
+database = 'database name' 
+username = 'username' 
+password = 'password' 
 cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 cursor = cnxn.cursor()
 
